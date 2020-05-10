@@ -1,40 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
-    <div id="container">
-      <h1>Tip Calculator</h1>
-      <div id="calculator">
-        <form>
-          <p>How much was your bill?</p>
-          <p>$ <input id="billamt" type="text" placeholder="Bill Amount" /></p>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-          <p>How was your service?</p>
-          <p>
-            <select id="serviceQual">
-              <option disabled selected value="0">-- Choose an Option --</option>
-              <option value="0.3">30&#37; &#45; Outstanding</option>
-              <option value="0.2">20&#37; &#45; Good</option>
-              <option value="0.15">15&#37; &#45; It was OK</option>
-              <option value="0.1">10&#37; &#45; Bad</option>
-              <option value="0.05">5&#37; &#45; Terrible</option>
-            </select>
-          </p>
-        </form>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 
-        <p>How many people are sharing the bill?</p>
-        <input id="peopleamt" type="text" placeholder="Number of People" /> people
-        <button type="button" id="calculate" onclick="calculateTip()">Calculate!</button>
+<style>
+.bgimg {
+    background-image: url('https://wallpapersite.com/images/wallpapers/happy-mother-039-s-day-2880x1620-happy-mothers-day-7457.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+    min-height: 100%;
+    min-width:100%;
+}
+
+  .vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  margin: auto;
+}
+
+.font
+{
+  font-size: x-large;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="ui top attached menu">
+    <div class="ui simple dropdown icon item">
+      <i class="heart icon"></i>
+      <div class="menu">
+        <div class="item">
+          <a href = "tim.html">Tim's Card</a>
+        </div>
+        <div class="item">
+          <a href = "tom.html">Tom's Card</a>
+        </div>
+        <div class="item">
+          <a href = "slides.html">Slides</a>
+        </div>
       </div>
-      <!--calculator end-->
-      <div id="totalAndTip">
-
-      </div>
-      <!--totalTip end-->
+ 
     </div>
-    <!--container end-->
-  </body>
-</html>
-<script type="text/javascript" src="calculator.js"></script>
+    <div class="borderless center item">
+      <a href = "index.html"> <div class = "font">Happy Mother's Day!</div> </a>
+    </div>
+  </div>
+
+
+
+
+
+  <div class = "bgimg ui container">
+  
+  <div class="vertical-center">
+    <a href="slides.html">
+    <button class="ui button">
+      <i class="play icon"></i>
+      Play
+    </button>
+   </a>
+  </div>
+
+</div>
+
+
+</body>
+</html> 
